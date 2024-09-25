@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teleindicador de Metro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Teleindicador de Metro</h1>
-        <label for="stationSelect">Selecciona una estación:</label>
-        <select id="stationSelect"></select>
 
-        <div id="teleindicador" class="teleindicador">
-            <p>Próximos trenes:</p>
-            <div id="trainTimes"></div>
+        <!-- Selector de estación -->
+        <label for="stationSelect">Selecciona una estación:</label>
+        <select id="stationSelect">
+            <option value="">--Selecciona una estación--</option>
+            <!-- Las estaciones se llenarán dinámicamente desde JavaScript -->
+        </select>
+
+        <!-- Teleindicador -->
+        <div class="teleindicador">
+            <h2>Próximos Trenes</h2>
+            <div id="trainTimes">
+                <!-- Aquí se mostrará la información de los próximos trenes -->
+            </div>
         </div>
     </div>
 
