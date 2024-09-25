@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.teleindicador {
+    background-color: #222;
+    border: 2px solid #00FF00;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#trainTimes {
+    margin-top: 10px;
+    animation: type 3s steps(40) 1 normal both;
+    white-space: pre;
+    overflow: hidden;
+}
+
+@keyframes type {
+    from { width: 0; }
+    to { width: 100%; }
+}
