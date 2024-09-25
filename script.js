@@ -8,7 +8,7 @@ let trips = [];
 let routes = [];
 
 function cargarGTFS() {
-    Papa.parse('stops.txt', {
+    Papa.parse('gtfs/stops.txt', {
         download: true,
         header: true,
         complete: function(results) {
@@ -17,7 +17,7 @@ function cargarGTFS() {
         }
     });
 
-    Papa.parse('stop_times.txt', {
+    Papa.parse('gtfs/stop_times.txt', {
         download: true,
         header: true,
         complete: function(results) {
@@ -25,7 +25,7 @@ function cargarGTFS() {
         }
     });
 
-    Papa.parse('trips.txt', {
+    Papa.parse('gtfs/trips.txt', {
         download: true,
         header: true,
         complete: function(results) {
@@ -33,7 +33,7 @@ function cargarGTFS() {
         }
     });
 
-    Papa.parse('routes.txt', {
+    Papa.parse('gtfs/routes.txt', {
         download: true,
         header: true,
         complete: function(results) {
