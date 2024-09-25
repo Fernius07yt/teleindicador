@@ -11,6 +11,8 @@ body {
 
 .container {
     text-align: center;
+    width: 90%;
+    max-width: 600px;
 }
 
 .teleindicador {
@@ -18,10 +20,8 @@ body {
     border: 2px solid #00FF00;
     padding: 20px;
     margin-top: 20px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 18px;
+    overflow: visible; /* Permite que el contenido no se corte */
 }
 
 .train-info {
@@ -45,11 +45,10 @@ p {
     padding: 0;
 }
 
+/* Asegura que no haya truncamiento del contenido */
 #trainTimes {
-    margin-top: 10px;
-    animation: type 3s steps(40) 1 normal both;
-    white-space: pre;
-    overflow: hidden;
+    white-space: normal; /* Cambiar a normal para evitar que se corte el texto */
+    overflow: visible;   /* Asegura que todo el contenido sea visible */
 }
 
 @keyframes type {
