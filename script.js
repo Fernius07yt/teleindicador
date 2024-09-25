@@ -1,11 +1,9 @@
-// Cargar datos GTFS y preparar la estructura
-const stationSelect = document.getElementById('stationSelect');
-const trainTimesDiv = document.getElementById('trainTimes');
-
 let stops = [];
 let stopTimes = [];
 let trips = [];
 let routes = [];
+const stationSelect = document.getElementById('stationSelect');
+const trainTimesDiv = document.getElementById('trainTimes');
 
 // Cargar datos GTFS y preparar la estructura
 function cargarGTFS() {
@@ -69,6 +67,8 @@ function calcularMinutosRestantes(horaLlegada) {
 // Actualizar el teleindicador con los próximos trenes
 function actualizarTeleindicador() {
     const estacionSeleccionada = stationSelect.value;
+    if (!estacionSeleccionada) return;
+
     const trenesProximos = stopTimes.filter(st => st.stop_id === estacionSeleccionada);
 
     // Filtrar trenes que ya han pasado
@@ -104,3 +104,6 @@ stationSelect.addEventListener('change', actualizarTeleindicador);
 
 // Cargar los datos al iniciar
 cargarGTFS();
+
+// Actualizar automáticamente cada 30 segundos
+setInterval(actualizarTeleindicador, 30000);  // 30000 ms = 30 segundos
