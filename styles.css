@@ -24,6 +24,22 @@ body {
     font-size: 18px;
 }
 
+.train-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.train-info .destino {
+    text-align: left;
+    flex: 1;
+}
+
+.train-info .minutos {
+    text-align: right;
+    flex: 0;
+}
+
 p {
     margin: 0;
     padding: 0;
