@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleindicador de Metro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teleindicador de Metro</h1>
+        <label for="stationSelect">Selecciona una estación:</label>
+        <select id="stationSelect"></select>
+
+        <div id="teleindicador" class="teleindicador">
+            <p>Próximos trenes:</p>
+            <div id="trainTimes"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
