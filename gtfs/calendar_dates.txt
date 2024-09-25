@@ -1,0 +1,9 @@
+service_id,date,exception_type
+invs_22_02.pex,20221029,2
+choctubreinvs_22_02.pex,20221029,1
+invl_22_02.pex,20221031,2
+invv_22_02.pex,20221031,1
+invl_22_02.pex,20221101,2
+festinvl_22_02.pex,20221101,1
+invd_22_02.pex,20221030,2
+fu1830hinvd_22_v02_02.pex,20221030,1

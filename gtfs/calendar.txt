@@ -1,0 +1,5 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+invl_22_02.pex,1,1,1,1,0,0,0,20221020,20221120
+invv_22_02.pex,0,0,0,0,1,0,0,20221020,20221120
+invs_22_02.pex,0,0,0,0,0,1,0,20221020,20221120
+invd_22_02.pex,0,0,0,0,0,0,1,20221020,20221120
